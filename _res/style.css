@@ -1,0 +1,141 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+body {
+	font-family:Verdana;
+	font-size:12px;
+}
+.clear {
+	clear:left;
+}
+h1, h2, h3, h4 {
+	font-weight:normal;
+	line-height:200%;
+}
+h1 {
+	font-size:200%;
+}
+h2 {
+	font-size:160%;
+}
+h3 {
+	font-size:140%;
+}
+h4 {
+	font-weight:bold;
+}
+
+#left {
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	width:200px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#left ul {
+	display:block;
+	margin:30px 0 0;
+}
+#left ul li a {
+	display:block;
+	padding:8px 5px 8px 20px;
+	color:black;
+	margin:2px 0;
+	text-decoration:none;	
+}
+#left ul li a:hover, #left ul a.active {
+	background:#e1e1e1;
+}
+#left ul li.add {
+	margin-top:5px;
+	border-top:1px solid #e1e1e1;
+}
+
+#right {
+	position:absolute;
+	left:200px;
+	top:0;
+	right:0;
+	bottom:0;
+	background:#e1e1e1;
+	border-left:1px solid silver;
+	overflow:auto;
+}
+#right .content, #right .new {
+	display:none;
+	margin:10px;
+}
+#right ul {
+	font-size:10px;
+}
+#right iframe {
+	border:0px none;
+	width:100%;
+	min-height:400px;
+}
+#right code {
+	display:none; /* code MUSS zu einem CodeMirror ungewandelt werden. Den interessiert das display:none nicht. */
+}
+#right #test {
+	padding:10px 0;
+}
+#testcode, #right #test .CodeMirror-wrapping {
+	display:block;
+	float:left;
+	width:50%;
+}
+#testresponse {
+	display:block;
+	width:47%;
+	margin-left:53%;
+}
+#testresponse .wrap {
+	padding:10px;
+	font-size:12px;
+	line-height:140%;
+}
+
+#right #new label, #right #new input {
+	font-size:12px;
+}
+#right #new input {
+	width:70%;
+}
+#new .CodeMirror-wrapping {
+	border:1px solid #e1e1e1;
+	-moz-border-radius:2px;
+	margin:10px  0 0;
+}
+
+#right #code {
+	padding:10px 0;
+}
+#code .head {
+	font-size:12px;
+	margin:0 10px 10px 10px;
+	width:100%;
+}
+/*#code .head .download {
+	float:left;
+	width:300px;
+}*/
+#code .head p {
+	display:block;
+	float:left;
+	margin:0 10px 0 0;
+	padding:2px 0 0 0;
+}
+.CodeMirror-wrapping {
+	background:white;
+}
+.CodeMirror-line-numbers {
+    width: 2.2em;
+    color: #aaa;
+    background-color: #eee;
+    text-align: right;
+    padding-right: .3em;
+    font-size: 10pt;
+    font-family: monospace;
+    padding-top: .4em;
+}
